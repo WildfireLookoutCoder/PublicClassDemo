@@ -2,7 +2,7 @@ nav a{
     background-color: darkgreen;
     padding: 1vh 1vw;
     margin: 2vw;
-    border-radius: 10%;
+    border-radius: 10px 20px 30px 40px;
     color: white;
     line-height: 2.7rem;
 }

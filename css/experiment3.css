@@ -1,0 +1,11 @@
+img{
+    filter: grayscale(100%);
+    filter: brightness(250%);
+    filter: hue-rotate(340deg);
+    filter: saturate(2);
+}
+html{
+    background-image: url("../images/Paper.jpg");
+    /* background-repeat: no-repeat;
+    background-size: contain; */
+}

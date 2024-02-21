@@ -1,0 +1,54 @@
+nav a:hover {
+    background-color: lightgreen;
+}
+
+a:hover {
+    color: darkgreen;
+}
+
+a:visited{
+    color:red;
+}
+
+a:active{
+    color:yellow;
+}
+
+input:focus{
+    background-color: yellow;
+}
+
+input:disabled{
+    background-color: darkgrey;
+    color: lightgray;
+}
+
+section p:first-of-type::first-line{
+    font-size: 1.7rem;
+}
+
+section p:first-of-type::first-letter{
+    font-weight: 700;
+    background-color: chartreuse;
+    padding: 5px;
+    margin: 1px;
+}
+
+a::before{
+    content: "$";
+}
+a::after {
+    content: "⇛";
+}
+
+section:nth-of-type(even){
+    background-color: aquamarine;
+}
+
+li:hover{
+    background-color:red;
+}
+
+::selection{
+    background-color: blueviolet;
+}
