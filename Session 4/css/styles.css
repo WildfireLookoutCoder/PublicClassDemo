@@ -1,55 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
-html {
-    font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
-    font-weight: 350;
-    font-size: 18px;
-}
-
-h1, h2{
-    font-weight: 700;
-}
-h1{
-    
-    font-size: 2rem;
-}
-h2{
-    min-height: 1.8rem;
-    padding: .5rem 0 .5rem .5rem;
-    font-size: 1.2rem;
-}
-h2, figcaption{
-    background-color: #333;
-    color: #fff;
-}
-
-body{
-    width: 90vw;
+/* clouds.jpg 720px x 540px */
+header{
+    height: 100px;
     margin: 0 auto;
+    max-width: 700px; 
+    background-image: url('../images/clouds.jpg');
+    animation: scroll 12s ease-in-out 0s 1 normal both;
 }
+@keyframes scroll {
+    from { background-position: 0 0px; }
+    to { background-position: -32px -4px}
+  }
 
-header, nav, section{
-    margin-top: 5vh;
-}
-
-section{
-    clear: left;
-}
-
-figure {
-    max-width: 30%;
-    float: left;
-    margin-right: 2vw;
-    margin-bottom: .2rem;
-    background-color: #333;
-}
-figcaption{
-    padding: 5%;
-}
-img{
-    max-width: 100%;
-}
-
-p{
-    margin-top: 2vh;
-}
+  h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: .6rem;
+    color: #1d1e23;
+  }
+  body{
+    background-color: #5d6070;
+  }

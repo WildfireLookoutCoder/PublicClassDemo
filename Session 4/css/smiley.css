@@ -1,0 +1,11 @@
+#smiley{
+    width: 100px;
+    height: 100px;
+    background: url("../images/SmileySprite.png") 0 0;
+    animation: smiley .5s steps(10) infinite alternate;
+}
+
+@keyframes smiley {
+    from { background-position: 0 0px; }
+    to { background-position: 0 -1000px; }
+  }

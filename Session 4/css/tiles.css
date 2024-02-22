@@ -1,0 +1,13 @@
+#tile, #animatedTile{
+    height: 100px;
+    width: 100%;  
+    background-image: url('../images/Tile.png');
+    background-size: 16px;
+}
+#animatedTile{
+    animation: scroll 10s linear 0s infinite normal both;
+}
+@keyframes scroll {
+    from { background-position: 0 0px; }
+    to { background-position: 32px -16px}
+  }
