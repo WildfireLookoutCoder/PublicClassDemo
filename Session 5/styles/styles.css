@@ -5,14 +5,14 @@ responsive - adaptive + fluid in ONE webpage. No longer need seperate web page. 
 mobile-first responsive - same as above, but design for the phones FIRST. Aka Progressive design */
 
 body{
-    /* color: red; */
-    font-size: 16px;
+    color: red;
+    font-size: 16px; /* == 1rem */
 }
 
 /* Mobile */
 @media screen and (min-width: 480px){
     body{
-        /* color: blue; */
+        color: blue;
         font-size: 1.3rem;
     }
 }
@@ -20,7 +20,7 @@ body{
 /* Tablet */
 @media screen and (min-width: 768px) {
     body{
-        /* color: green; */
+        color: green;
         font-size: 1.7rem;
     }
 }
@@ -28,7 +28,7 @@ body{
 /* Desktop */
 @media screen and (min-width: 992px){
     body{
-        /* color: orange; */
+        color: orange;
         font-size: 2rem;
     }
 }
@@ -36,7 +36,30 @@ body{
 /* Huge */
 @media screen and (min-width: 1280px) {
     body{
-        /* color: purple; */
+        color: purple;
         font-size: 2.2rem;
     }
 }
+
+/* All print media will have black fonts, EXCEPT business cards or smaller which will have dark gray ink */
+/* Media queries can be nested! */
+@media print {
+    body{
+        color: black;
+    }
+
+    @media (max-width: 3.5in) {
+        
+        body{
+            color: darkgray;
+        }
+    }
+}
+
+/* Disables animations on devices where user has set a preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
