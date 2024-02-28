@@ -1,0 +1,42 @@
+/* static - absolute units of measurement (px), would not grow or shrink with the screens, mostly landscape screen orientation
+fluid - relative units of measurement (%), would grow and shrink for most screens, mostly landscape screen orientation (would not work on mobile very well)
+adaptive - URLs like "m.facebook.com" with the 'm.' prefix. Could still use fluid measurements.
+responsive - adaptive + fluid in ONE webpage. No longer need seperate web page. Instead we need seperate styles.
+mobile-first responsive - same as above, but design for the phones FIRST. Aka Progressive design */
+
+body{
+    /* color: red; */
+    font-size: 16px;
+}
+
+/* Mobile */
+@media screen and (min-width: 480px){
+    body{
+        /* color: blue; */
+        font-size: 1.3rem;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    body{
+        /* color: green; */
+        font-size: 1.7rem;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px){
+    body{
+        /* color: orange; */
+        font-size: 2rem;
+    }
+}
+
+/* Huge */
+@media screen and (min-width: 1280px) {
+    body{
+        /* color: purple; */
+        font-size: 2.2rem;
+    }
+}
