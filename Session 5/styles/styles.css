@@ -4,6 +4,8 @@ adaptive - URLs like "m.facebook.com" with the 'm.' prefix. Could still use flui
 responsive - adaptive + fluid in ONE webpage. No longer need seperate web page. Instead we need seperate styles.
 mobile-first responsive - same as above, but design for the phones FIRST. Aka Progressive design */
 
+/* https://css-tricks.com/a-complete-guide-to-css-media-queries/ */
+/* attempting examples from the article */
 body{
     color: red;
     font-size: 16px; /* == 1rem */
