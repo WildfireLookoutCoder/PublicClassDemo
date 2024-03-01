@@ -1,0 +1,14 @@
+body {
+    display: grid;
+    /* 6, 9, or 12 columns recommended */
+    grid-template-columns: repeat(6, 1fr);
+    /* grid-template-columns: repeat(3, 2fr) repeat(3, 1fr); */
+    /* grid-template-columns: 9; */
+    /* grid-template-columns: 12; */
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+img {
+    width: 44px;
+}
