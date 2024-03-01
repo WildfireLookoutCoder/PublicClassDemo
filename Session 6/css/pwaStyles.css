@@ -1,0 +1,120 @@
+@media screen and (min-width: 750px) {
+    .medScreen {
+        display: initial;
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        gap: 15px;
+        grid-template-areas:
+            "header header"
+            "main widget1"
+            "main widget2"
+            "main widget3"
+            "footer footer"
+        ;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    #crime {
+        grid-area: widget1;
+    }
+
+    #violence {
+        grid-area: widget2;
+    }
+
+    #parents {
+        grid-area: widget3;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    #bat {
+        height: 6rem;
+    }
+
+    .batLogo {
+        font-size: 4rem;
+
+    }
+
+    nav {
+        font-size: 1rem;
+    }
+
+    nav a,
+    nav a:visited {
+        padding: .2rem .7rem;
+    }
+
+    aside {
+        display: block;
+        width: fit-content;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .lrgScreen {
+        display: initial;
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        grid-template-areas:
+            "header header header"
+            "widget1 widget2 widget3"
+            "widget4 widget5 widget6"
+            "main main main"
+            ". footer ."
+        ;
+    }
+
+    aside,
+    input[type="range"] {
+        width: 90%;
+    }
+
+    #superman {
+        grid-area: widget4;
+    }
+
+    #aquaman {
+        grid-area: widget5;
+    }
+
+    #wonderwoman {
+        grid-area: widget6;
+    }
+
+    #bat {
+        height: 8rem;
+    }
+
+    .batLogo {
+        margin-bottom: 2rem;
+        font-size: 4rem;
+    }
+
+    nav {
+        font-size: 1rem;
+    }
+
+    nav a,
+    nav a:visited {
+        padding: .2rem .7rem;
+    }
+
+}

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --AaronDarkGreen: #324001;
+    --AaronGreen: #5A7302;
+    --AaronBrightGreen: #C1B83E;
+    --AaronBrightYellow: #FFDC39;
+    --AaronBrightYellow: #FFDC39;
+    --AaronDarkYellow: #E0A801;
+    --borderRadius: 15px;
+}
+
+html {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 24px;
+    background-color: var(--AaronBrightGreen);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Lobster", sans-serif;
+    font-optical-sizing: auto;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    background-color: var(--AaronDarkYellow);
+    color: var(--AaronDarkGreen);
+    border: solid 12px var(--AaronDarkGreen);
+    border-radius: var(--borderRadius);
+    margin-top: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+article {
+    border: solid 6px var(--AaronDarkGreen);
+    border-radius: var(--borderRadius);
+    margin-top: .5rem;
+    padding: .5rem;
+    background-color: var(--AaronBrightYellow);
+}
+
+/* LAYOUT */
+
+body {
+    padding-top: 2.5vw;
+    width: 95vw;
+    margin: 0 auto;
+}
+
+.medScreen,
+.lrgScreen {
+    display: none;
+}
+
+/* LINKS */
+
+a,
+a:visited {
+    color: var(--AaronDarkGreen);
+    text-decoration: none;
+}
+
+nav a,
+nav a:visited {
+    color: var(--AaronDarkYellow);
+    text-decoration: none;
+    background-color: var(--AaronDarkGreen);
+    padding: .4rem 1.2rem;
+    border-radius: var(--borderRadius);
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+/* COMPONENTS */
+header {
+    border: solid 12px var(--AaronDarkGreen);
+    border-radius: var(--borderRadius);
+    padding-bottom: 1rem;
+    background-color: var(--AaronGreen);
+}
+
+header figure,
+nav {
+    display: inline;
+    min-width: fit-content;
+    font-size: 2rem;
+    color: var(--AaronDarkYellow);
+}
+
+nav {
+    width: 70%;
+    position: relative;
+    top: -2rem;
+    margin: .2rem auto;
+}
+
+.batLogo,
+.batLogo a:hover {
+    color: var(--AaronBrightGreen);
+}
+
+.batLogo {
+    margin-bottom: 2rem;
+    font-size: 5rem;
+}
+
+#bat {
+    height: 7rem;
+    position: relative;
+    top: 1rem;
+    stroke: currentColor;
+    fill: var(--AaronDarkYellow);
+}
+
+aside {
+    border: solid 6px var(--AaronDarkGreen);
+    border-radius: var(--borderRadius);
+    width: 40%;
+    padding: .5rem;
+    height: fill;
+    display: inline-block;
+    margin: 1rem auto;
+}
+
+aside img {
+    display: inline;
+    width: 2.5rem;
+}
+
+article input {
+    width: 90%;
+    margin: 0 auto;
+}
+
+label {
+    font-size: 2rem;
+    display: block;
+    width: 100%;
+}
+
+footer {
+    background-color: var(--AaronDarkGreen);
+    width: inherit;
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+    height: 3rem;
+    border-radius: var(--borderRadius) var(--borderRadius) 0 0;
+
+    text-align: center;
+    color: var(--AaronGreen);
+}
