@@ -1,8 +1,8 @@
 body {
     display: grid;
     /* 6, 9, or 12 columns recommended */
-    grid-template-columns: repeat(6, 1fr);
-    /* grid-template-columns: repeat(3, 2fr) repeat(3, 1fr); */
+    /* grid-template-columns: repeat(6, 1fr); */
+    grid-template-columns: repeat(3, 3fr) repeat(3, 1fr);
     /* grid-template-columns: 9; */
     /* grid-template-columns: 12; */
     gap: 10px;
@@ -11,4 +11,34 @@ body {
 
 img {
     width: 44px;
+}
+
+header {
+    grid-column: 5 / 1;
+    grid-row: 1;
+}
+
+nav {
+    grid-column: 2 / 6;
+    grid-row: 2;
+}
+
+main {
+    grid-column: 1 / 6;
+    grid-row: 3;
+}
+
+figure {
+    grid-column-start: 6;
+    grid-row: 3;
+}
+
+aside {
+    grid-column-start: 6;
+    grid-row: 4;
+}
+
+footer {
+    grid-column: 1 / 7;
+    grid-row: 5;
 }

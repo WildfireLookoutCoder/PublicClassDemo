@@ -55,11 +55,6 @@ body {
     margin: 0 auto;
 }
 
-.medScreen,
-.lrgScreen {
-    display: none;
-}
-
 /* LINKS */
 
 a,
@@ -158,3 +153,12 @@ footer {
     text-align: center;
     color: var(--AaronGreen);
 }
+
+/* You can only use CSS on <svg> not <img src="*.svg"/> */
+/* #bat {
+    background-color: red;
+}
+
+.superman figure img {
+    background-color: red;
+} */
