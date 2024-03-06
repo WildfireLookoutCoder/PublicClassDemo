@@ -40,4 +40,86 @@ nav {
     flex-direction: row;
     /* justify-content: space-around; */
     justify-content: space-between;
+    gap: 1rem;
+}
+
+nav a {
+    background-color: red;
+    flex-grow: 1;
+}
+
+nav a:nth-child(2) {
+    background-color: orange;
+    flex-grow: 4;
+}
+
+/* I promise... this stuff used to be REALLY hard to do */
+
+#center-everything {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: darkslategray;
+    justify-content: center;
+    align-items: center;
+}
+
+/* align-items: stretch will not work if the flex item's height or width interfere. Stretch respects the height and width of children */
+/* Stretch is great for when you want to display a series of <p> elements that have varying amounts of content. */
+
+#center-stretch {
+    display: flex;
+    width: 600px;
+    height: 600px;
+    background-color: red;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+#center-stretch p {
+    max-width: 100px;
+    background-color: orange;
+
+    /* You can STILL use padding/margin if you want */
+    padding: 0 1rem;
+}
+
+
+/* You can use gap properties to manage whitespace between elements */
+#another-nav nav {
+    height: 100px;
+    justify-content: start;
+    gap: 1rem;
+    align-items: end;
+}
+
+#another-nav nav a {
+    /* Flex helps us avoid having to do margins o children items */
+    /* margin: 0 1rem; */
+
+
+    /* flex-basis sets default width of items */
+    flex-basis: 200px;
+    /* shrink allows items to shrink responsively */
+    flex-shrink: 1;
+    text-align: center;
+}
+
+#another-nav nav a:hover {
+    /* align-self overrides align items */
+    /* align-self: flex-start; */
+    /* NEVER USE CSS TO MOVE/GROW/SHRINK CLICKABLE ITEMS ON HOVER!!!!  */
+    /* This example is a cautionary tale... */
+
+    align-self: stretch;
+    /* stretch is better for a 'growing' link effect because then the area the mouse is hovering won't lose the button/link */
+
+}
+
+fieldset {
+    display: flex;
+}
+
+input[type="text"] {
+    flex-basis: 500px;
 }
