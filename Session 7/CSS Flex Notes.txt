@@ -1,0 +1,54 @@
+Flexbox class notes
+1. Purpose:
+	Align child elements in one direction (horizontal or vertical) (block == vertical, inline == horizontal, grid == both)
+	Child items gain 'flex' - ability to grow or shrink
+	Container has control over the width, height, and space. Even when dimensions of child element are unknown
+	CSS-Tricks Note: Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the Grid layout is intended for larger scale layouts.
+
+	Flexbox should help take care of most margin and width properties and values for you
+	Flexbox will appear to not be working if there is no extra space for it to play with
+2. Properties
+
+	FLEX CONTAINER	
+	
+	display: flex
+		will affect child items
+	flex-direction: row; row-reverse;
+		horizontal alignment
+	flex-direction: column; row-reverse;
+	flex-wrap: nowrap; wrap; wrap-reverse;
+		locks it to one row
+	flex-flow: column wrap; row nowrap;
+		Shorthand for direction and wrap
+	justify-content: space-between;
+		Elements aligned along flex-direction
+	align-items: baseline; stretch; center;
+		Elements aligned along cross-direction
+		Stretch will respect min-width and max-width
+	align-content: ...
+		Only works with multiple rows and controls space within the container
+	gap:
+	row-gap:
+	column-gap:
+		minimum gutter sizes defined by these properties
+
+	FLEX ITEMS
+
+	order: 1; 2; 3; ...etc
+		Changes the order an element will appear in
+	flex-grow: 0; 1;
+	flex-shrink: 0; 1; 2; 3; etc;
+		unit-less proportions. Think of 1 fr.
+	flex-basis: 0; auto; 32px; 
+		defines element's default width. WIDTH and FLEX-BASIS not quite the same but pretty close for most use cases
+		value can be a length or a keyword (auto, content)
+	flex: 0 1 auto; //defaults
+		shorthand for flex-grow, flex-shrink and flex-basis combined
+	align-self: ...
+		overrides align-items
+		accepts same values
+	justify-self:
+		NOT FOR FLEX. ONLY FOR GRID.
+3. Flexbox Use Cases
+	https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Typical_use_cases_of_flexbox
+	
