@@ -1,0 +1,94 @@
+
+https://en.wikipedia.org/wiki/CSS_framework
+
+1. CSS frameworks offer different modules and tools:
+	reset style sheet
+	grid especially for responsive web design
+	web typography
+	set of icons in sprites or icon fonts
+	styling for tooltips, buttons, elements of forms
+	parts of graphical user interfaces like accordion, tabs, slideshow or modal windows (Lightbox)
+	equalizer to create equal height content
+	often used CSS helper classes (left, hide)
+
+2. Other CSS frameworks are out there
+	Tailwind CSS
+		https://www.youtube.com/watch?v=mr15Xzb1Ook
+		Uses 100s of CSS utility classes
+		Does not have full components
+		Creates ugly HTML
+		More flexible than Bootstrap
+	Bulma CSS
+		https://www.freecodecamp.org/news/learn-bulma-in-5-minutes-ec5188c53e83/
+		Also a collection of CSS classes
+		Uses Modifier classes like 'is-*' and 'has-*'
+		Column grid is based on flexbox
+		Lightweight
+	Foundation CSS
+		https://zurb.com/university/foundation-intro
+		"XY Grid"?
+		CSS and JS in the library
+		Developer is meant to overwrite existing styles to customize designs
+	Material
+		CSS/JS/Components
+		Heavyweight
+		Tied into material.io - a design framework from Google
+	Semantic UI
+		https://semantic-ui.com/
+		CSS/JS/Components and classes
+		Heavyweight
+	
+	Play wth a new framework every now and again. No need to become a committed expert to any one framework.
+3. Installing Bootstrap (from Bootstrap's Ddocumentation)
+	Downloading all the files into a vendor folder is not required, but is a common pattern.
+	<link> and <script> is fastest way to get started
+	Included code:
+		bootstrap.css
+		bootstrap-grid.css
+		bootstrap-utilities.css
+		bootstrap-reboot.css
+
+		bootstrap.bundle.js
+		bootstrap.js
+	Minified versions of these files are used in prod, while the full file is usually used in development
+4. Browsers and Devices
+	Latest stable versions of all major browsers
+	Old browsers supported as well with CSS hacks that throw validation errors/warnings
+	Bootstap's JS is NOT compatible with React/Vue/Angular's JS
+		packages available for these frameworks
+5. Accessibility
+	Out-of-the-box accessible - if you use the HTML markup correctly
+	Colour contrast passes  WCAG 2.1 text color contrast ratio of 4.5:1 and the WCAG 2.1 non-text color contrast ratio of 3:1)
+	Interactive components work with assistive tech and have ARIA roles already assigned to them.
+6. Bootstrap resizes things based on RFS mixin, mixins are managed by Sass. 
+7. You can customize bootstrap properties 2 ways:
+	Download the source files and change the source code.
+	Override Bootstrap styles in your own stylesheet.
+		Learn the class names for Bootstrap's styles and use them as they are used in the themes
+		Theme colours: primary, secondary, success, danger, warning, info, light, and dark
+		Demo Dark mode
+		More variables are available (show list)
+8. Layout
+	Breakpoints
+		Extra small		None	<576px
+		Small			sm	≥576px
+		Medium			md	≥768px
+		Large			lg	≥992px
+		Extra large		xl	≥1200px
+		Extra extra large	xxl	≥1400px
+	Containers
+		Can be nested, but you should need to
+		<body class="container"> most of the time
+		Containers center and horizontally pad your content
+	Grid
+		12 columns per row
+		6 breakpoints
+		Uses Flexbox
+		Rows are wrappers for columns
+		Gutters are also responsive and customizable
+		col == 1fr 
+		col-3 == 3fr
+		STUDENTS OFTEN HAVE ISSUES WITH NESTING AND GETTING UNEXPECTED RESULTS
+		
+		
+		
