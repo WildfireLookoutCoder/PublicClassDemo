@@ -1,7 +1,12 @@
 /* Customize Bootstrap by overriding their variables */
 
 /* :root {
-    --bs-body-color: red;
+    --bs-body-color: chartreuse;
+} */
+
+/* .display-1 {
+
+    background-color: var(--bs-info);
 } */
 
 /* img {

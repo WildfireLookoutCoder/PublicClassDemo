@@ -71,11 +71,11 @@ https://en.wikipedia.org/wiki/CSS_framework
 8. Layout
 	Breakpoints
 		Extra small		None	<576px
-		Small			sm	≥576px
-		Medium			md	≥768px
-		Large			lg	≥992px
-		Extra large		xl	≥1200px
-		Extra extra large	xxl	≥1400px
+		Small			sm		≥576px
+		Medium			md		≥768px
+		Large			lg		≥992px
+		Extra large		xl		≥1200px
+		Extra extra large		xxl	≥1400px
 	Containers
 		Can be nested, but you should need to
 		<body class="container"> most of the time
@@ -89,6 +89,9 @@ https://en.wikipedia.org/wiki/CSS_framework
 		col == 1fr 
 		col-3 == 3fr
 		STUDENTS OFTEN HAVE ISSUES WITH NESTING AND GETTING UNEXPECTED RESULTS
-		
+9. Components
+	Each component has its own documentation
+	Use as-needed, don't learn the whole library
+	DON'T USE <div> ELEMENTS!
 		
 		

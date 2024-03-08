@@ -15,11 +15,11 @@
 
 <body class="container">
     <!-- <h1>Hello Bootstrap!</h1> -->
-    <h1 class="display-1">Hello Bootstrap!</h1>
+    <h1 class="display-1 bg-success">Hello Bootstrap!</h1>
     <article class="row">
         <h2>3-column Layout</h2>
         <figure class="col text-center">
-            <img src="images/WFLKTCODER_Logo_lightslategray.svg" alt="Aaron's logo" class="img-fluid">
+            <img src="images/WFLKTCODER_Logo_lightslategray.svg" alt="Aaron's logo" class="figure-img img-fluid">
             <figcaption>CSS3 Fundamentals with Aaron Champagne</figcaption>
         </figure>
         <section class="col">
@@ -47,9 +47,9 @@
 
         </section>
     </article>
-    <article class="row">
+    <article class="row justify-content-between">
         <h2>2-column Layout</h2>
-        <section class="col">
+        <section class="col-5">
 
             <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime amet sapiente modi totam
                 eum voluptatum
@@ -62,7 +62,7 @@
                 suscipit ipsam est ratione dolorem, inventore delectus aperiam autem culpa. Maxime temporibus eius
                 voluptatem dolore ullam.</p>
         </section>
-        <section class="col">
+        <section class="col-5">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quisquam ullam sequi
                 laudantium cum
                 accusamus deserunt architecto, accusantium dignissimos iure quis, sed consequatur nam dolorum molestiae
@@ -75,9 +75,11 @@
 
         </section>
     </article>
-    <article class="row">
-        <h2>Asymmetrical Layouts</h2>
-        <section class="col-9 col-sm-12">
+    <article class="row gx-4s">
+        <h2>Asymmetrical/Variable Layouts</h2>
+        <!-- Must provide a class for each breakpoint if you want the layout to change at that breakpoint -->
+        <!-- In the following line 4 classes are assigning 4 different column widths at different breakpoints -->
+        <section class="col-12 col-sm-9 col-md-6 col-lg-4">
             <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime amet sapiente modi totam
                 eum voluptatum
                 expedita quidem, pariatur quasi deserunt enim laudantium ducimus explicabo molestias alias ipsam fugit.
@@ -89,7 +91,7 @@
                 suscipit ipsam est ratione dolorem, inventore delectus aperiam autem culpa. Maxime temporibus eius
                 voluptatem dolore ullam.</p>
         </section>
-        <section class="col col-sm-12">
+        <section class="col-12 col-sm-3 col-md-6 col-lg-8">
             <p>ABC Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum est corporis soluta quod
                 magni unde,
                 fugiat perspiciatis aliquam deserunt eaque cum nostrum ratione ex dignissimos, temporibus sunt
@@ -104,16 +106,20 @@
                 dolores et vel ducimus doloribus eveniet expedita, hic placeat!</p>
         </section>
     </article>
-    <aside class="card" style="width: 18rem;">
+    <figure class="card" style="width: 18rem;">
         <img src="images/received_817900692814793.jpeg" class="card-img-top" alt="Professor was so small">
-        <section class="card-body">
+        <figcaption class="card-body">
             <h5 class="card-title">Card Component</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis illum,
                 cupiditate soluta fugit ab rem nemo repellendus accusantium aut voluptates obcaecati voluptatum cumque
                 vel? Quod voluptas sit molestias vero fugit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis repudiandae veniam aut. Officiis
+                similique maxime pariatur harum, quas quaerat accusantium veritatis? Suscipit eveniet maxime magnam,
+                molestias dolorum natus laudantium officia!</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
-        </section>
-    </aside>
+        </figcaption>
+    </figure>
     <aside class="alert alert-primary" role="alert">
         This is an Alert component!
     </aside>
